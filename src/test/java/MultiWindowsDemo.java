@@ -16,6 +16,7 @@ public class MultiWindowsDemo {
         driver.findElement(By.id("ta1")).sendKeys("hello selenium");
         System.out.println("new application title: "+driver.getTitle());
         driver.switchTo().newWindow(WindowType.WINDOW);
+//        driver.switchTo().newWindow(WindowType.TAB); to open any url in another tab
         Helper.maximizeWindow();
         Helper.launchApplication("https://tutorialsninja.com/demo/");
         driver.findElement(By.name("search")).sendKeys("HP");
